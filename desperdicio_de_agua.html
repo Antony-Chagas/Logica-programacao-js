@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h1>Desperdício de água por hora!</h1>
+
+<h3>Calcule quantos litros de água foi desperdissado por um vasamento que fica pingando:</h3>
+
+<p> Prencha o campo abaixo com a quantidade de horas pingando:</p>
+<input/>
+<button>Calcular</button>
+
+
+
+<script>
+//Uma torneira gotejando desperdiça mais de 40 litros de água por dia, 1,6 litros por hora.
+
+var desperdicioPorHora = 40 / 24;
+
+var input = document.querySelector("input");
+    input.focus();
+
+function calcularAgua() {
+
+    var desperdicio = input.value * desperdicioPorHora
+    alert("Seu diperdicio de agua é " + desperdicio.toFixed(2) + " litros")
+	
+}
+
+
+var button = document.querySelector("button");
+button.onclick = calcularAgua;
+
+
+</script>
